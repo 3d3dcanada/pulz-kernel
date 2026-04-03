@@ -1,0 +1,24 @@
+{
+  "name": "@pulz/kernel",
+  "version": "2.0.0",
+  "private": true,
+  "description": "PulZ Cognitive Kernel - Governance primitives, policies, and audit trail",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./primitives": "./src/primitives/index.ts",
+    "./policies": "./src/policies/index.ts",
+    "./validators": "./src/validators/index.ts",
+    "./audit": "./src/audit/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0"
+  }
+}
